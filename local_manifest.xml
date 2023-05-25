@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<!-- Tracking -->
+ <remote name="mt6789-dev" fetch="https://github.com/xiaomi-mt6789-devs"/>
+ <remote name="los" fetch="https://github.com/LineageOS" />
+ <remote name="coffee" fetch="https://github.com/iDrinkCoffee-TG" />
+ 
+<!-- Trees -->
+ <project path="device/xiaomi/yunluo" name="android_device_xiaomi_yunluo" remote="coffee" revision="lineage-20" clone-depth="1" />
+ <project path="vendor/xiaomi/yunluo" name="android_vendor_xiaomi_yunluo" remote="mt6789-dev" revision="lineage-20" clone-depth="1" />
+ <project path="device/xiaomi/yunluo-kernel" name="android_device_xiaomi_yunluo-kernel" remote="mt6789-dev">
+ <project path="hardware/mediatek" name="android_hardware_mediatek" remote="mt6789-dev" revision="lineage-20" clone-depth="1" />
+ <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="los" revision="lineage-20" clone-depth="1" />
+ <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="los" revision="lineage-20" clone-depth="1" />
+
+</manifest>
